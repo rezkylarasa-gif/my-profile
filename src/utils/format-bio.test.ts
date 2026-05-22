@@ -10,6 +10,6 @@ describe('formatBio', () => {
   })
 
   it('menangani string kosong', () => {
-    expect(formatBio('Seorang mahasiswa yang sedang belajar React dan TypeScript', 10)).toBe('eorang mahasis...')
+    expect(formatBio('', 10)).toBe('')
   })
 })
