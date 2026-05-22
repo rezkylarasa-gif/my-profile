@@ -7,3 +7,7 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /github/i })).toBeInTheDocument()
   })
 })
+it('menampilkan nama profil', () => {
+  render(<App />)
+  expect(screen.getByText('rezkylarasa13')).toBeInTheDocument()
+})
